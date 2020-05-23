@@ -271,11 +271,12 @@ button {
   background: url('http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/special-menu-bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   color: #fff;
 }
 
 .offers .container {
-  padding: 80px 0 20px 0;
+  padding: 80px 0 0px 0;
   width: 90%;
   margin: auto;
   max-width: 1300px;
@@ -377,6 +378,67 @@ button {
   width: 100%;
   height: 100%;
 }
+
+.menu {
+  background: url('http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/body-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+.menu .container {
+  padding: 80px 0 20px 0;
+  width: 90%;
+  margin: auto;
+  max-width: 1300px;
+}
+
+
+.menu .container .upper .sub-head {
+  font-size: 2rem;
+  width: 100%;
+  text-align: center;
+  margin: 10px 0 10px 0;
+  text-align: center;
+}
+
+.menu .container .upper .main-head {
+  text-transform: uppercase;
+  color: #eee;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 0 15px 0;
+}
+
+.menu .container .upper .design {
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+
+.menu .container .menu-options{
+  margin: 20px 0;
+}
+
+.menu .container .menu-options .option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 15px;
+  margin:  0 0 10px 0;
+  background: #222;
+}
+
+.menu .container .menu-options .option .name {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  color: #d8ac4e;
+}
+
+.menu .container .menu-options .option i {
+  color: rgb(212, 212, 212);
+}
+
 
 @media (min-width: 340px) {
   .hero .container .content {
