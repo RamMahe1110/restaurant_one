@@ -306,6 +306,7 @@ button {
 .offers .offers-cont .offer {
   background: #000;
   padding: 40px 20px;
+  margin: 0 0 40px 0;
 }
 
 .offers .offers-cont .offer .name {
@@ -342,7 +343,7 @@ button {
 }
 
 .offers .offers-cont .offer .btn-primary {
-  padding: 15px  20px;
+  padding: 15px 20px;
   margin: 0 auto 0px auto;
   border: 2px solid #d8ac4e;
   color: #d8ac4e;
@@ -362,6 +363,18 @@ button {
 .offers .offers-cont .offer .btn-primary i {
   color: #d8ac4e;
   font-size: 1rem;
+}
+
+.offers .offers-cont .offer-img-cont {
+  margin: 0 0 40px 0;
+  height: 700px;
+  overflow: hidden;
+}
+
+.offers .offers-cont .offer-img-cont .food-img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
 }
 
 @media (min-width: 340px) {
