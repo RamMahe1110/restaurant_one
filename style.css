@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #333;
+  font-family: 'Montserrat', sans-serif;
+}
+
+button {
+  cursor: pointer;
+  background: transparent;
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.style-font {
+  font-family: 'Cookie', cursive;
+  color: #d8ac4e;
+  font-weight: 400;
+}
+
+.main-header {
+  background: #000;
+  padding: 15px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.main-header .nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-header .nav-container .right {
+  min-width: 40%;
+}
+
+.main-header .nav-container .right .logo {
+  width: 120px;
+}
+
+.main-header .nav-container .left-sm {
+  width: 20%;
+  text-align: right;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  /* display: none; */
+}
+
+.main-header .nav-container .left-sm i {
+  color: #fff;
+  font-size: 2rem;
+  margin-left: auto;
+  font-weight: lighter;
+}
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/slider-bg-image-2.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero .container .content {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  width: 90%;
+}
+
+.hero .container .content .top,
+.hero .container .content .bottom {
+  text-align: center;
+}
+
+.hero .container .content .top .design,
+.hero .container .content .top .design {
+  width: 100px;
+}
+
+.hero .container .content .sub-head {
+  font-size: 2rem;
+  width: 100%;
+  text-align: center;
+  margin: 10px 0 15px 0;
+}
+
+.hero .container .content .main-head {
+  text-transform: uppercase;
+  color: #eee;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.hero .container .content .detail {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1rem;
+  line-height: 28px;
+  margin: 15px 0 20px 0;
+  text-align: center;
+}
+
+.hero .container .content .actions .action {
+  width: 80%;
+  padding: 20px 0;
+  margin: 0 auto 20px auto;
+  border: 2px solid #d8ac4e;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero .container .content .actions .action .text {
+  font-size: 0.8rem;
+  margin: 0 15px 0 0;
+}
+
+.hero .container .content .actions .action i {
+  color: #d8ac4e;
+  font-size: 1rem;
+}
+
+.hero .container .content .bottom {
+  margin: 30px 0 0 0;
+}
+
+.hero .container .dots {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  width: 100px;
+}
+
+.hero .container .dots .dot {
+  min-width: 15px;
+  min-height: 15px;
+  background: grey;
+}
+
+.hero .container .dots .active {
+  background: #d8ac4e;
+}
+
+/* about */
+
+.about {
+  background: url('http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/body-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+  background-attachment: fixed;
+}
+
+.about .container {
+  width: 90%;
+  margin: auto;
+  padding: 50px 0;
+}
+
+.about .container .left .sub-head {
+  font-size: 2rem;
+  width: 100%;
+  text-align: center;
+  margin: 10px 0 10px 0;
+  text-align: center;
+}
+
+.about .container .left .main-head {
+  text-transform: uppercase;
+  color: #eee;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 0 15px 0;
+}
+
+.about .container .left .design {
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+
+.about .container .left .line {
+  font-size: 1.5rem;
+  color: #d8ac4e;
+  line-height: 35px;
+  text-align: center;
+  margin: 0 0 30px 0;
+}
+
+.about .container .left .detail {
+  line-height: 30px;
+  font-size: 1rem;
+  font-weight: lighter;
+  color: rgb(212, 212, 212);
+  text-align: center;
+}
+
+.about .container .left .features {
+  padding: 50px 0;
+  width: 200px;
+  margin: auto;
+}
+
+.about .container .left .features .feature {
+  margin: 0 0 40px 0;
+}
+
+.about .container .left .features .feature .upper {
+  padding: 15px 15px 0 15px;
+  background: #000;
+}
+
+.about .container .left .features .feature .upper .cont {
+  border: 1px solid rgb(75, 75, 75);
+  border-bottom: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.about .container .left .features .feature .upper .cont .icon {
+  width: 50%;
+}
+
+.about .container .left .features .feature .lower {
+  padding: 0 15px 15px 15px;
+  background: #d8ac4e;
+  box-shadow: inset 0 10px 30px -7px rgba(0, 0, 0, 0.4);
+}
+
+.about .container .left .features .feature .lower .cont {
+  border: 1px solid rgb(202, 202, 202);
+  padding: 30px 20px;
+  border-top: none;
+}
+.about .container .left .features .feature .lower .cont .title {
+  color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+@media (min-width: 340px) {
+  .hero .container .content {
+    top: 50%;
+  }
+  .hero .container .dots {
+    display: flex;
+  }
+}
