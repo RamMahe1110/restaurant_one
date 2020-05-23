@@ -28,7 +28,7 @@ button {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 10;
 }
 
 .main-header .nav-container {
@@ -454,7 +454,7 @@ button {
   border: 1px solid grey;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   z-index: 2;
 }
 
@@ -466,7 +466,7 @@ button {
   margin: 30px 0 10px 0;
 }
 
-.menu .container .menu-options .menu-cont .menu-items .item  {
+.menu .container .menu-options .menu-cont .menu-items .item {
   padding: 0 0 20px 0;
   margin: 0 0 30px 0;
   border-bottom: 3px dotted grey;
@@ -495,11 +495,25 @@ button {
   margin: 20px 0;
 }
 
-.menu .container .menu-options .menu-cont .menu-items .item .main-details .left {
+.menu
+  .container
+  .menu-options
+  .menu-cont
+  .menu-items
+  .item
+  .main-details
+  .left {
   font-size: 1.3rem;
 }
 
-.menu .container .menu-options .menu-cont .menu-items .item .main-details .right {
+.menu
+  .container
+  .menu-options
+  .menu-cont
+  .menu-items
+  .item
+  .main-details
+  .right {
   font-size: 1.4rem;
   color: #d8ac4e;
 }
@@ -508,6 +522,119 @@ button {
   font-size: 1.1rem;
   color: rgb(212, 212, 212);
   line-height: 25px;
+}
+
+.popular-dishes {
+  background: url('http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/popular-menu-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.popular-dishes .container {
+  padding: 80px 0 20px 0;
+  width: 90%;
+  margin: auto;
+  max-width: 1300px;
+}
+
+.popular-dishes .container .upper .sub-head {
+  font-size: 2rem;
+  width: 100%;
+  text-align: center;
+  margin: 10px 0 10px 0;
+  text-align: center;
+}
+
+.popular-dishes .container .upper .main-head {
+  text-transform: uppercase;
+  color: #eee;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 0 15px 0;
+}
+
+.popular-dishes .container .upper .design {
+  text-align: center;
+  margin: 0 0 40px 0;
+}
+.popular-dishes .container .main-content .dish  {
+  margin:  0 0 50px 0;
+  position: relative;
+}
+
+.popular-dishes .container .main-content .dish .shapeover {
+  position: absolute;
+  width: 90%;
+  height: 94%;
+  border: 2px solid #000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.popular-dishes .container .main-content .dish .top .food-img {
+  width: 100%;
+  display: block;
+}
+
+.popular-dishes .container .main-content .dish .bottom {
+  background: #d8ac4e;
+  padding: 0 0 30px 0;
+}
+
+.popular-dishes .container .main-content .dish .bottom .cont {
+  width: 70%;
+  margin: auto;
+}
+
+.popular-dishes .container .main-content .dish .bottom .cont .price {
+  padding: 10px 0;
+  font-size: 1.5rem;
+  background: #000;
+  width: 100px;
+  margin: 0 auto 0px auto;
+  color: #fff;
+  text-align: center;
+  transform: translate(0, -50%);
+}
+
+.popular-dishes .container .main-content .dish .bottom .cont .name {
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 0 10px 0;
+}
+
+.popular-dishes .container .main-content .dish .bottom .cont .design-cont {
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+
+.popular-dishes .container .main-content .dish .bottom .cont .button-inv {
+  width: 80%;
+  padding: 20px 0;
+  margin: 0 auto 20px auto;
+  border: 1px solid #000;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popular-dishes .container .main-content .dish .bottom .cont .button-inv .text {
+  font-size: 0.8rem;
+  margin: 0 15px 0 0;
+}
+
+.popular-dishes .container .main-content .dish .bottom .cont .button-inv i {
+  color: #000;
+  font-size: 1rem;
 }
 
 @media (min-width: 340px) {
