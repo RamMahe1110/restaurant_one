@@ -272,6 +272,7 @@ button {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
   color: #fff;
 }
 
@@ -384,6 +385,7 @@ button {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   color: #fff;
 }
 .menu .container {
