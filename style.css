@@ -442,6 +442,21 @@ button {
   margin: 10px 0;
 }
 
+.menu .container .menu-options .menu-cont .showcase-img-cont {
+  position: relative;
+}
+
+.menu .container .menu-options .menu-cont .showcase-img-cont .shapeover {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  border: 1px solid grey;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 2;
+}
+
 .menu .container .menu-options .menu-cont .showcase-img-cont .showcase-img {
   width: 100%;
 }
