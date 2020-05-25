@@ -68,8 +68,7 @@ button:focus {
 }
 
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url('http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/slider-bg-image-2.jpg');
+  background: url('http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/slider-bg-image-1.jpg');
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -933,7 +932,7 @@ button:focus {
   padding: 15px;
   border: 2px solid #d8ac4e;
   color: #d8ac4e;
-  font-family: "montserrat", sans-serif;
+  font-family: 'montserrat', sans-serif;
 }
 
 .main-footer .container .content form input::placeholder {
