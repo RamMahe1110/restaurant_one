@@ -775,7 +775,7 @@ button:focus {
   margin: auto;
   height: 100px;
   overflow: hidden;
-  transform: translate(-50%,-40%);
+  transform: translate(-50%, -40%);
   position: absolute;
   top: 0;
   left: 50%;
@@ -812,6 +812,69 @@ button:focus {
 .testi .container .testi-content .testimonial .cont .prof {
   text-align: center;
   color: #c0bebf;
+}
+
+.gallery {
+  background: url('http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/body-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.gallery .container {
+  padding: 80px 0 80px 0;
+  width: 90%;
+  margin: auto;
+  max-width: 1300px;
+}
+
+.gallery .container .upper .sub-head {
+  font-size: 2rem;
+  width: 100%;
+  text-align: center;
+  margin: 10px 0 10px 0;
+  text-align: center;
+}
+
+.gallery .container .upper .main-head {
+  text-transform: uppercase;
+  color: #eee;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 0 15px 0;
+}
+
+.gallery .container .upper .design {
+  text-align: center;
+  margin: 0 0 40px 0;
+}
+
+.gallery .container .content .cats {
+  margin: 0 0 80px 0;
+}
+
+.gallery .container .content .cats .cat {
+  padding: 15px 0;
+  text-align: center;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  background: rgba(65, 65, 65, 0.5);
+  margin: 0 0 3px 0;
+}
+
+.gallery .container .content .cats .active-cat {
+  background: #d8ac4e;
+}
+
+.gallery .container .content .images .img-cont {
+  margin: 0 0 5px 0;
+}
+
+.gallery .container .content .images .img-cont .img {
+  width: 100%;
 }
 
 @media (min-width: 340px) {
