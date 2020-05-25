@@ -16,6 +16,10 @@ button {
   font-family: 'Montserrat', sans-serif;
 }
 
+textarea:focus, input:focus, button:focus{
+  outline: none;
+}
+
 .style-font {
   font-family: 'Cookie', cursive;
   color: #d8ac4e;
@@ -560,8 +564,8 @@ button {
   text-align: center;
   margin: 0 0 40px 0;
 }
-.popular-dishes .container .main-content .dish  {
-  margin:  0 0 50px 0;
+.popular-dishes .container .main-content .dish {
+  margin: 0 0 50px 0;
   position: relative;
 }
 
@@ -636,6 +640,88 @@ button {
   color: #000;
   font-size: 1rem;
 }
+
+.book {
+  background: url('http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/book-table-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.book .container {
+  padding: 80px 0 20px 0;
+  width: 90%;
+  margin: auto;
+  max-width: 1300px;
+}
+
+.book .container .upper .sub-head {
+  font-size: 2rem;
+  width: 100%;
+  text-align: center;
+  margin: 10px 0 10px 0;
+  text-align: center;
+}
+
+.book .container .upper .main-head {
+  text-transform: uppercase;
+  color: #eee;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 0 15px 0;
+}
+
+.book .container .upper .design {
+  text-align: center;
+  margin: 0 0 40px 0;
+}
+
+.book .container .book-form {
+  background: #d8ac4e;
+  padding: 25px;
+}
+
+.book .container .book-form .content {
+  padding: 10px 30px 30px 30px;
+  border: 2px solid #ebd096;
+}
+
+.book .container .book-form .content input {
+  width: 100%;
+  padding: 20px 10px 20px 0;
+  margin:  0 0 0px 0;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid black;
+  font-size: 1rem;
+}
+
+.book .container .book-form .content .button-inv {
+  width: 100%;
+  padding: 20px 0;
+  margin: 40px auto 0px auto;
+  border: 2px solid #000;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.book .container .book-form .content .button-inv .text {
+  font-size: 0.8rem;
+  margin: 0 15px 0 0;
+}
+
+.book .container .book-form .content .button-inv i {
+  color: #000;
+  font-size: 1rem;
+}
+
 
 @media (min-width: 340px) {
   .hero .container .content {
