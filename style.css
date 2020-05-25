@@ -16,7 +16,9 @@ button {
   font-family: 'Montserrat', sans-serif;
 }
 
-textarea:focus, input:focus, button:focus{
+textarea:focus,
+input:focus,
+button:focus {
   outline: none;
 }
 
@@ -645,13 +647,13 @@ textarea:focus, input:focus, button:focus{
   background: url('http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/book-table-bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position:center;
+  background-position: center;
   background-attachment: fixed;
   color: #fff;
 }
 
 .book .container {
-  padding: 80px 0 20px 0;
+  padding: 80px 0 80px 0;
   width: 90%;
   margin: auto;
   max-width: 1300px;
@@ -689,10 +691,11 @@ textarea:focus, input:focus, button:focus{
   border: 2px solid #ebd096;
 }
 
-.book .container .book-form .content input {
+.book .container .book-form .content input,
+.book .container .book-form .content textarea {
   width: 100%;
   padding: 20px 10px 20px 0;
-  margin:  0 0 0px 0;
+  margin: 0 0 0px 0;
   background: transparent;
   border: none;
   border-bottom: 2px solid black;
@@ -722,6 +725,94 @@ textarea:focus, input:focus, button:focus{
   font-size: 1rem;
 }
 
+.testi {
+  background: url('http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/reviews-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.testi .container {
+  padding: 80px 0 80px 0;
+  width: 90%;
+  margin: auto;
+  max-width: 1300px;
+}
+
+.testi .container .upper .sub-head {
+  font-size: 2rem;
+  width: 100%;
+  text-align: center;
+  margin: 10px 0 10px 0;
+  text-align: center;
+}
+
+.testi .container .upper .main-head {
+  text-transform: uppercase;
+  color: #eee;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 0 15px 0;
+}
+
+.testi .container .upper .design {
+  text-align: center;
+  margin: 0 0 80px 0;
+}
+
+.testi .container .testi-content .testimonial {
+  background: #000;
+  padding: 20px;
+  position: relative;
+}
+
+.testi .container .testi-content .testimonial .img-cont {
+  width: 100px;
+  border-radius: 50%;
+  margin: auto;
+  height: 100px;
+  overflow: hidden;
+  transform: translate(-50%,-40%);
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+
+.testi .container .testi-content .testimonial .cont {
+  width: 100%;
+  padding: 80px 0px 50px 0;
+  border: 1px solid #555;
+}
+
+.testi .container .testi-content .testimonial .img-cont .testi-img {
+  object-position: center;
+  object-fit: cover;
+  width: 100%;
+}
+
+.testi .container .testi-content .testimonial .cont .review {
+  color: #c0bebf;
+  width: 90%;
+  text-align: center;
+  line-height: 28px;
+  font-size: 1rem;
+  margin: 0 auto 30px auto;
+  letter-spacing: 1px;
+}
+
+.testi .container .testi-content .testimonial .cont .name {
+  text-align: center;
+  font-size: 1.3rem;
+  margin: 0 0 10px 0;
+}
+
+.testi .container .testi-content .testimonial .cont .prof {
+  text-align: center;
+  color: #c0bebf;
+}
 
 @media (min-width: 340px) {
   .hero .container .content {
