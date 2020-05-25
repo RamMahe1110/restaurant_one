@@ -877,6 +877,102 @@ button:focus {
   width: 100%;
 }
 
+.main-footer {
+  background: url('http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/footer-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.main-footer .container {
+  padding: 80px 0 40px 0;
+  width: 90%;
+  margin: auto;
+  max-width: 1300px;
+}
+
+.main-footer .container .upper .sub-head {
+  font-size: 2rem;
+  width: 100%;
+  text-align: center;
+  margin: 10px 0 10px 0;
+  text-align: center;
+}
+
+.main-footer .container .upper .main-head {
+  text-transform: uppercase;
+  color: #eee;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 0 15px 0;
+}
+
+.main-footer .container .upper .design {
+  text-align: center;
+  margin: 0 0 40px 0;
+}
+
+.main-footer .container .content .text {
+  line-height: 28px;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.main-footer .container .content form {
+  display: flex;
+  margin: 30px auto 40px auto;
+  width: 90%;
+}
+
+.main-footer .container .content form input {
+  width: 85%;
+  background: transparent;
+  padding: 15px;
+  border: 2px solid #d8ac4e;
+  color: #d8ac4e;
+  font-family: "montserrat", sans-serif;
+}
+
+.main-footer .container .content form input::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #d8ac4e;
+}
+
+.main-footer .container .content form input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #d8ac4e;
+}
+
+.main-footer .container .content form input::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #d8ac4e;
+}
+
+.main-footer .container .content .icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+
+.main-footer .container .content .icons i {
+  font-size: 1rem;
+  color: rgb(216, 216, 216);
+}
+
+.main-footer .container .content form button {
+  width: 15%;
+  background: #d8ac4e;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media (min-width: 340px) {
   .hero .container .content {
     top: 50%;
