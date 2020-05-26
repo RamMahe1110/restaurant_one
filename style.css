@@ -179,6 +179,7 @@ button:focus {
 }
 
 .about .dish-cont {
+  display: none;
   position: absolute;
   top: 1%;
   left: -5%;
@@ -186,6 +187,7 @@ button:focus {
 }
 
 .about .achieve-cont {
+  display: none;
   position: absolute;
   top: 70%;
   z-index: 0;
@@ -193,6 +195,7 @@ button:focus {
 }
 
 .about .old-pic-cont {
+  display: none;
   position: absolute;
   top: 10%;
   z-index: 0;
@@ -200,6 +203,7 @@ button:focus {
 }
 
 .about .award-cont {
+  display: none;
   position: absolute;
   top: 70%;
   z-index: 0;
@@ -319,10 +323,10 @@ button:focus {
 }
 
 .offers .container {
-  padding: 80px 0 50px 0;
+  padding: 80px 0 80px 0;
   width: 90%;
   margin: auto;
-  max-width: 1300px;
+  max-width: 1100px;
 }
 
 .offers .container .sub-head {
@@ -1229,16 +1233,93 @@ button:focus {
   }
 }
 
+@media (min-width: 1000px) {
+  .offers .container .offers-cont {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .offers .container .offers-cont .offer,
+  .offers .container .offers-cont .offer-img-cont {
+    width: 32%;
+  }
+  .offers .container .offers-cont .offer {
+    order: 1;
+  }
+  .offers .container .offers-cont .offer-img-cont {
+    height: unset;
+  }
+
+  .offers .container .offers-cont .offer-img-cont .food-img {
+    display: none;
+  }
+
+  .offers .container .offers-cont .offer-img-cont:nth-child(2) {
+    background: url('http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/special-menu-img2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .offers .container .offers-cont .offer-img-cont:nth-child(3) {
+    background: url('http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/special-menu-img1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .offers .container .offers-cont .offer-img-cont:nth-child(2) {
+    order: 2;
+  }
+
+  .offers .offers-cont .offer {
+    padding: 80px 20px;
+  }
+
+  .offers .offers-cont .offer .name {
+    margin: 0px 0 40px 0;
+  }
+  .offers .offers-cont .offer .discount {
+    padding: 8px 0;
+    font-size: 1.1rem;
+  }
+
+  .offers .offers-cont .offer .detail {
+    width: 85%;
+    margin: 0 auto 50px auto;
+    line-height: 30px;
+  }
+
+  .offers .offers-cont .offer .discount {
+    font-size: 1.1rem;
+  }
+}
+
 @media (min-width: 1200px) {
   .about .container {
     display: flex;
     justify-content: space-between;
   }
+
+  .about .dish-cont {
+    display: unset;
+  }
+
+  .about .achieve-cont {
+    display: unset;
+  }
+
+  .about .old-pic-cont {
+    display: unset;
+  }
+
+  .about .award-cont {
+    display: unset;
+  }
+
   .about .container .left {
     width: 60%;
   }
   .about .container .right {
-    width: 35%;
+    width: 38%;
   }
 
   .about .container .right .cont {
@@ -1246,7 +1327,7 @@ button:focus {
   }
 
   .about .container .right .cont .cont-img {
-    width: 125%;
+    width: 120%;
   }
 }
 
