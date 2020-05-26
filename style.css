@@ -175,13 +175,47 @@ button:focus {
   background-position: center;
   color: #fff;
   background-attachment: fixed;
+  position: relative;
+}
+
+.about .dish-cont {
+  position: absolute;
+  top: 1%;
+  left: -5%;
+  z-index: 0;
+}
+
+.about .achieve-cont {
+  position: absolute;
+  top: 70%;
+  z-index: 0;
+  left: 0%;
+}
+
+.about .old-pic-cont {
+  position: absolute;
+  top: 10%;
+  z-index: 0;
+  right: 0;
+}
+
+.about .award-cont {
+  position: absolute;
+  top: 70%;
+  z-index: 0;
+  right: 2%;
 }
 
 .about .container {
   width: 90%;
   margin: auto;
-  padding: 50px 0 0 0;
-  max-width: 1300px;
+  padding: 80px 0 0px 0;
+  max-width: 1100px;
+  z-index: 5;
+}
+
+.about .container .left {
+  z-index: 2;
 }
 
 .about .container .left .sub-head {
@@ -266,6 +300,10 @@ button:focus {
   text-align: center;
   font-weight: bold;
   font-size: 1.3rem;
+}
+
+.about .container .right {
+  z-index: 5;
 }
 
 .about .container .right .cont .cont-img {
@@ -1188,5 +1226,35 @@ button:focus {
   }
   .gallery .container .content .images .img-cont .img {
     width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .about .container .left {
+    width: 60%;
+  }
+  .about .container .right {
+    width: 35%;
+  }
+
+  .about .container .right .cont {
+    width: 100%;
+  }
+
+  .about .container .right .cont .cont-img {
+    width: 125%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .about .dish-cont {
+    left: 0%;
+  }
+  .about .award-cont {
+    right: 5%;
   }
 }
