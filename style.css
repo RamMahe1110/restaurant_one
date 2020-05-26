@@ -281,7 +281,7 @@ button:focus {
 }
 
 .offers .container {
-  padding: 80px 0 0px 0;
+  padding: 80px 0 50px 0;
   width: 90%;
   margin: auto;
   max-width: 1300px;
@@ -494,10 +494,11 @@ button:focus {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .menu .container .menu-options .menu-cont .menu-items .item .main-details {
-  margin: 20px 0;
+  margin: 20px 0 0 0;
 }
 
 .menu
@@ -509,6 +510,7 @@ button:focus {
   .main-details
   .left {
   font-size: 1.3rem;
+  width: 70%;
 }
 
 .menu
@@ -521,12 +523,23 @@ button:focus {
   .right {
   font-size: 1.4rem;
   color: #d8ac4e;
+  width: 30%;
+  text-align: right;
 }
 
-.menu .container .menu-options .menu-cont .menu-items .item .sub-detail {
+.menu
+  .container
+  .menu-options
+  .menu-cont
+  .menu-items
+  .item
+  .main-details
+  .sub-detail {
   font-size: 1.1rem;
   color: rgb(212, 212, 212);
   line-height: 25px;
+  width: 100%;
+  margin: 20px 0 0 0;
 }
 
 .popular-dishes {
@@ -978,5 +991,202 @@ button:focus {
   }
   .hero .container .dots {
     display: flex;
+  }
+}
+
+@media (min-width: 650px) {
+  html {
+    font-size: 20px;
+  }
+
+  .hero .container .content .detail {
+    font-size: 0.9rem;
+  }
+
+  .hero .container .content .actions {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero .container .content .actions .action {
+    width: unset;
+    padding: 15px 30px;
+    margin: 0;
+  }
+
+  .hero .container .content .actions .action:nth-child(1) {
+    margin: 0 15px 0 0;
+  }
+
+  .hero .container .content .actions:nth-child(2) {
+    margin: 0 0 0 15px;
+  }
+
+  .hero .container .content .actions .action .text {
+    font-size: 0.6rem;
+  }
+
+  .hero .container .content .sub-head {
+    font-size: 2.5rem;
+  }
+
+  .hero .container .content .actions .action i {
+    font-size: 0.8rem;
+  }
+
+  .hero .container .content .main-head {
+    font-size: 3.3rem;
+  }
+
+  .hero .container .dots {
+    width: 100px;
+  }
+
+  .hero .container .dots .dot {
+    min-width: 15px;
+    min-height: 15px;
+  }
+
+  .about .container .left .sub-head {
+    font-size: 2.2rem;
+  }
+
+  .about .container .left .main-head {
+    font-size: 2.5rem;
+  }
+
+  .about .container .left .line {
+    font-size: 1.2rem;
+    width: 95%;
+    margin: 0 auto 30px auto;
+  }
+
+  .about .container .left .detail {
+    font-size: 0.9rem;
+  }
+
+  .about .container .left .features {
+    display: flex;
+    padding: 50px 0 0px 0;
+  }
+
+  .about .container .left .features .feature {
+    margin: 0 auto 0px auto;
+    width: 200px;
+  }
+
+  .about .container .left .features .feature .lower .cont .title {
+    font-size: 1rem;
+  }
+  .about .container .right .cont {
+    text-align: center;
+  }
+
+  .about .container .right .cont .cont-img {
+    width: 350px;
+    margin: auto;
+  }
+
+  .offers .container .sub-head {
+    font-size: 2.3rem;
+  }
+
+  .offers .container .main-head {
+    font-size: 2.5rem;
+  }
+
+  .offers .offers-cont .offer .name {
+    font-size: 1.5rem;
+  }
+  .offers .offers-cont .offer .discount {
+    width: 150px;
+  }
+  .offers .offers-cont .offer .price {
+    font-size: 1.5rem;
+  }
+  .offers .offers-cont .offer .detail {
+    font-size: 0.8rem;
+    color: #c0bebf;
+  }
+
+  .offers .offers-cont .offer .btn-primary {
+    padding: 15px 40px;
+    border: 1px solid #d8ac4e;
+  }
+
+  .offers .offers-cont .offer .btn-primary .text {
+    font-size: 0.6rem;
+    margin: 0 10px 0 0;
+    font-weight: bold;
+  }
+
+  .offers .offers-cont .offer-img-cont {
+    height: unset;
+  }
+
+  .offers .offers-cont .offer-img-cont .food-img {
+    width: 100%;
+    height: unset;
+  }
+
+  .menu .container .menu-options .menu-cont .menu-items .item {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu .container .menu-options .menu-cont .menu-items .item .upper {
+    width: 100px;
+    height: 100px;
+    margin: 0 30px 0 0;
+  }
+  .menu .container .menu-options .menu-cont .menu-items .item .main-details {
+    flex: 1;
+    margin: 0;
+  }
+
+  .menu
+    .container
+    .menu-options
+    .menu-cont
+    .menu-items
+    .item
+    .main-details
+    .left {
+    font-size: 1.1rem;
+  }
+
+  .menu
+    .container
+    .menu-options
+    .menu-cont
+    .menu-items
+    .item
+    .main-details
+    .right {
+    font-size: 1.2rem;
+  }
+  .menu
+    .container
+    .menu-options
+    .menu-cont
+    .menu-items
+    .item
+    .main-details
+    .sub-detail {
+    font-size: 0.8rem;
+    color: rgb(212, 212, 212);
+    line-height: 28px;
+    margin: 10px 0 0 0;
+  }
+
+  .popular-dishes .container .main-content .dish .bottom .cont .button-inv {
+    margin: 0 auto 40px auto;
+  }
+
+  .gallery .container .content .images .img-cont {
+    text-align: center;
+  }
+  .gallery .container .content .images .img-cont .img {
+    width: 50%;
   }
 }
