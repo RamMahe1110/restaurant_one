@@ -435,7 +435,24 @@ button:focus {
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: #fff;
+  position: relative;
 }
+
+.menu .menu1-cont,
+.menu .menu2-cont {
+  display: none;
+  position: absolute;
+}
+
+.menu .menu1-cont {
+  top: 5%;
+}
+
+.menu .menu2-cont {
+  top: 40%;
+  right: 0%;
+}
+
 .menu .container {
   padding: 80px 0 80px 0;
   width: 90%;
@@ -710,6 +727,22 @@ button:focus {
   background-position: center;
   background-attachment: fixed;
   color: #fff;
+  position: relative;
+}
+
+.book .cal1-cont,
+.book .cal2-cont {
+  display: none;
+  position: absolute;
+}
+
+.book .cal1-cont {
+  top: 5%;
+}
+
+.book .cal2-cont {
+  top: 10%;
+  right: 0;
 }
 
 .book .container {
@@ -1274,6 +1307,11 @@ button:focus {
 }
 
 @media (min-width: 1000px) {
+  .menu .menu1-cont,
+  .menu .menu2-cont {
+    display: unset;
+  }
+
   .main-header .nav-container {
     max-width: 1100px;
     margin: auto;
@@ -1418,6 +1456,12 @@ button:focus {
     margin: 0 0 0px 0;
     width: 32%;
   }
+
+  .book .cal1-cont,
+  .book .cal2-cont {
+    display: unset;
+  }
+
   .gallery .container .content .images .img-cont {
     width: 24.5%;
   }
