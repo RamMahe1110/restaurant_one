@@ -134,6 +134,7 @@ button:focus {
 .hero .container .content .actions .action .text {
   font-size: 0.8rem;
   margin: 0 15px 0 0;
+  color: #d8ac4e;
 }
 
 .hero .container .content .actions .action i {
@@ -319,6 +320,7 @@ button:focus {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
   color: #fff;
 }
 
@@ -714,7 +716,7 @@ button:focus {
   padding: 80px 0 80px 0;
   width: 90%;
   margin: auto;
-  max-width: 1300px;
+  max-width: 1100px;
 }
 
 .book .container .upper .sub-head {
@@ -742,6 +744,9 @@ button:focus {
 .book .container .book-form {
   background: #d8ac4e;
   padding: 25px;
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
 }
 
 .book .container .book-form .content {
@@ -796,7 +801,7 @@ button:focus {
   padding: 80px 0 80px 0;
   width: 90%;
   margin: auto;
-  max-width: 1300px;
+  max-width: 1100px;
 }
 
 .testi .container .upper .sub-head {
@@ -819,6 +824,11 @@ button:focus {
 .testi .container .upper .design {
   text-align: center;
   margin: 0 0 80px 0;
+}
+
+.testi .container .testi-content .testimonial:nth-child(2),
+.testi .container .testi-content .testimonial:nth-child(3) {
+  display: none;
 }
 
 .testi .container .testi-content .testimonial {
@@ -885,7 +895,7 @@ button:focus {
   padding: 80px 0 80px 0;
   width: 90%;
   margin: auto;
-  max-width: 1300px;
+  max-width: 1100px;
 }
 
 .gallery .container .upper .sub-head {
@@ -1235,9 +1245,60 @@ button:focus {
   .gallery .container .content .images .img-cont .img {
     width: 50%;
   }
+
+  .gallery .container .content .cats {
+    display: flex;
+    justify-content: space-between;
+  }
+  .gallery .container .content .cats .cat {
+    width: 19%;
+  }
+
+  .gallery .container .content .images {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .gallery .container .content .images .img-cont {
+    width: 48%;
+    margin: 0 0 30px;
+  }
+
+  .gallery .container .content .images .img-cont .img {
+    width: 100%;
+  }
+  .main-footer .container .content .icons {
+    max-width: 300px;
+  }
 }
 
 @media (min-width: 1000px) {
+  .main-header .nav-container {
+    max-width: 1100px;
+    margin: auto;
+  }
+
+  .main-header .nav-container .left-sm {
+    display: none;
+  }
+
+  .hero .container .content .sub-head {
+    font-size: 3rem;
+  }
+
+  .hero .container .content .main-head {
+    font-size: 4.5rem;
+  }
+
+  .hero .container .content .actions .action {
+    padding: 15px 40px;
+  }
+
+  .hero .container .content .actions .action .text {
+    font-size: 0.6rem;
+  }
+
   .offers .container .offers-cont {
     display: flex;
     justify-content: space-between;
@@ -1357,7 +1418,17 @@ button:focus {
     margin: 0 0 0px 0;
     width: 32%;
   }
+  .gallery .container .content .images .img-cont {
+    width: 24.5%;
+  }
 
+  .main-footer .container .content .text {
+    font-size: 0.9rem;
+  }
+  .main-footer .container .content {
+    max-width: 600px;
+    margin: auto;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -1395,6 +1466,31 @@ button:focus {
 
   .about .container .right .cont .cont-img {
     width: 120%;
+  }
+
+  .testi .container .testi-content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .testi .container .testi-content .testimonial:nth-child(2),
+  .testi .container .testi-content .testimonial:nth-child(3) {
+    display: unset;
+  }
+
+  .testi .container .testi-content .testimonial {
+    width: 31%;
+  }
+
+  .testi .container .testi-content .testimonial .cont .review {
+    font-size: 0.7rem;
+  }
+
+  .testi .container .testi-content .testimonial .cont .name {
+    font-size: 1.1rem;
+  }
+  .testi .container .testi-content .testimonial .cont .prof {
+    font-size: 0.7rem;
   }
 }
 
