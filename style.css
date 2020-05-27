@@ -435,10 +435,10 @@ button:focus {
   color: #fff;
 }
 .menu .container {
-  padding: 80px 0 20px 0;
+  padding: 80px 0 80px 0;
   width: 90%;
   margin: auto;
-  max-width: 1300px;
+  max-width: 1100px;
 }
 
 .menu .container .upper .sub-head {
@@ -461,6 +461,10 @@ button:focus {
 .menu .container .upper .design {
   text-align: center;
   margin: 0 0 20px 0;
+}
+
+.menu .container .upper .categories {
+  display: none;
 }
 
 .menu .container .menu-options {
@@ -496,9 +500,9 @@ button:focus {
 
 .menu .container .menu-options .menu-cont .showcase-img-cont .shapeover {
   position: absolute;
-  width: 80%;
-  height: 80%;
-  border: 1px solid grey;
+  width: 90%;
+  height: 90%;
+  border: 2px solid rgba(255, 255, 255, 0.2);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -593,10 +597,10 @@ button:focus {
 }
 
 .popular-dishes .container {
-  padding: 80px 0 20px 0;
+  padding: 80px 0 80px 0;
   width: 90%;
   margin: auto;
-  max-width: 1300px;
+  max-width: 1100px;
 }
 
 .popular-dishes .container .upper .sub-head {
@@ -1291,6 +1295,69 @@ button:focus {
   .offers .offers-cont .offer .discount {
     font-size: 1.1rem;
   }
+
+  .menu .container .upper .categories {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: 40px auto 60px auto;
+  }
+
+  .menu .container .upper .categories .cat {
+    padding: 15px 30px;
+    text-transform: uppercase;
+    background: #000;
+    cursor: pointer;
+  }
+
+  .menu .container .upper .categories .cat:hover {
+    background: #d8ac4e;
+  }
+
+  .menu .container .upper .categories .active {
+    background: #d8ac4e;
+  }
+
+  .menu .container .menu-options .option {
+    display: none;
+  }
+
+  .menu .container .menu-options .menu-cont {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu .container .menu-options .menu-cont .menu-items {
+    margin: 0;
+  }
+
+  .menu .container .menu-options .menu-cont .menu-items .item {
+    margin: 0 0 20px 0;
+    padding: 0 0 13px 0;
+  }
+
+  .menu .container .menu-options .menu-cont .menu-items .item:last-child {
+    margin: 0;
+  }
+
+  .menu .container .menu-options .showcase-img-cont {
+    width: 40%;
+    display: flex;
+    align-items: center;
+  }
+
+  .menu .container .menu-options .menu-items {
+    width: 58%;
+  }
+  .popular-dishes .container .main-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  .popular-dishes .container .main-content .dish {
+    margin: 0 0 0px 0;
+    width: 32%;
+  }
+
 }
 
 @media (min-width: 1200px) {
