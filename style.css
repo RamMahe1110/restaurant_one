@@ -1,0 +1,1548 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #333;
+  font-family: 'Montserrat', sans-serif;
+}
+
+button {
+  cursor: pointer;
+  background: transparent;
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+}
+
+textarea:focus,
+input:focus,
+button:focus {
+  outline: none;
+}
+
+.style-font {
+  font-family: 'Cookie', cursive;
+  color: #d8ac4e;
+  font-weight: 400;
+}
+
+.main-header {
+  background: #000;
+  padding: 15px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.main-header .nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-header .nav-container .right {
+  min-width: 40%;
+}
+
+.main-header .nav-container .right .logo {
+  width: 120px;
+}
+
+.main-header .nav-container .left-sm {
+  width: 20%;
+  text-align: right;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  /* display: none; */
+}
+
+.main-header .nav-container .left-sm i {
+  color: #fff;
+  font-size: 2rem;
+  margin-left: auto;
+  font-weight: lighter;
+}
+
+.hero {
+  background: url('http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/slider-bg-image-1.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero .container .content {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  width: 90%;
+}
+
+.hero .container .content .top,
+.hero .container .content .bottom {
+  text-align: center;
+}
+
+.hero .container .content .top .design,
+.hero .container .content .top .design {
+  width: 100px;
+}
+
+.hero .container .content .sub-head {
+  font-size: 2rem;
+  width: 100%;
+  text-align: center;
+  margin: 10px 0 15px 0;
+}
+
+.hero .container .content .main-head {
+  text-transform: uppercase;
+  color: #eee;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.hero .container .content .detail {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1rem;
+  line-height: 28px;
+  margin: 15px 0 20px 0;
+  text-align: center;
+}
+
+.hero .container .content .actions .action {
+  width: 80%;
+  padding: 20px 0;
+  margin: 0 auto 20px auto;
+  border: 2px solid #d8ac4e;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero .container .content .actions .action .text {
+  font-size: 0.8rem;
+  margin: 0 15px 0 0;
+  color: #d8ac4e;
+}
+
+.hero .container .content .actions .action i {
+  color: #d8ac4e;
+  font-size: 1rem;
+}
+
+.hero .container .content .bottom {
+  margin: 30px 0 0 0;
+}
+
+.hero .container .dots {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  width: 80px;
+}
+
+.hero .container .dots .dot {
+  min-width: 10px;
+  min-height: 10px;
+  background: grey;
+}
+
+.hero .container .dots .active {
+  background: #d8ac4e;
+}
+
+/* about */
+
+.about {
+  background: url('http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/body-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.about .dish-cont {
+  display: none;
+  position: absolute;
+  top: 1%;
+  left: -5%;
+  z-index: 0;
+}
+
+.about .achieve-cont {
+  display: none;
+  position: absolute;
+  top: 70%;
+  z-index: 0;
+  left: 0%;
+}
+
+.about .old-pic-cont {
+  display: none;
+  position: absolute;
+  top: 10%;
+  z-index: 0;
+  right: 0;
+}
+
+.about .award-cont {
+  display: none;
+  position: absolute;
+  top: 70%;
+  z-index: 0;
+  right: 2%;
+}
+
+.about .container {
+  width: 90%;
+  margin: auto;
+  padding: 80px 0 0px 0;
+  max-width: 1100px;
+  z-index: 5;
+}
+
+.about .container .left {
+  z-index: 2;
+}
+
+.about .container .left .sub-head {
+  font-size: 2rem;
+  width: 100%;
+  text-align: center;
+  margin: 10px 0 10px 0;
+  text-align: center;
+}
+
+.about .container .left .main-head {
+  text-transform: uppercase;
+  color: #eee;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 0 15px 0;
+}
+
+.about .container .left .design {
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+
+.about .container .left .line {
+  font-size: 1.5rem;
+  color: #d8ac4e;
+  line-height: 35px;
+  text-align: center;
+  margin: 0 0 30px 0;
+}
+
+.about .container .left .detail {
+  line-height: 30px;
+  font-size: 1rem;
+  font-weight: lighter;
+  color: rgb(212, 212, 212);
+  text-align: center;
+}
+
+.about .container .left .features {
+  padding: 50px 0 20px 0;
+}
+
+.about .container .left .features .feature {
+  margin: 0 auto 40px auto;
+  width: 200px;
+}
+
+.about .container .left .features .feature .upper {
+  padding: 15px 15px 0 15px;
+  background: #000;
+}
+
+.about .container .left .features .feature .upper .cont {
+  border: 1px solid rgb(75, 75, 75);
+  border-bottom: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.about .container .left .features .feature .upper .cont .icon {
+  width: 50%;
+}
+
+.about .container .left .features .feature .lower {
+  padding: 0 15px 15px 15px;
+  background: #d8ac4e;
+  box-shadow: inset 0 10px 30px -7px rgba(0, 0, 0, 0.4);
+}
+
+.about .container .left .features .feature .lower .cont {
+  border: 1px solid rgb(202, 202, 202);
+  padding: 30px 20px;
+  border-top: none;
+}
+.about .container .left .features .feature .lower .cont .title {
+  color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.about .container .right {
+  z-index: 5;
+}
+
+.about .container .right .cont .cont-img {
+  width: 100%;
+}
+
+.offers {
+  background: url('http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/special-menu-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.offers .container {
+  padding: 80px 0 80px 0;
+  width: 90%;
+  margin: auto;
+  max-width: 1100px;
+}
+
+.offers .container .sub-head {
+  font-size: 2rem;
+  width: 100%;
+  text-align: center;
+  margin: 10px 0 10px 0;
+  text-align: center;
+}
+
+.offers .container .main-head {
+  text-transform: uppercase;
+  color: #eee;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 0 15px 0;
+}
+
+.offers .container .design {
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+
+.offers .offers-cont .offer {
+  background: #000;
+  padding: 40px 20px;
+  margin: 0 0 30px 0;
+}
+
+.offers .offers-cont .offer .name {
+  text-align: center;
+  font-size: 1.9rem;
+  color: #fff;
+  font-weight: bold;
+  margin: 0 0 20px 0;
+}
+
+.offers .offers-cont .offer .discount {
+  background: #d8ac4e;
+  color: #000;
+  font-weight: bold;
+  padding: 10px 0px;
+  text-align: center;
+  width: 120px;
+  margin: 0 auto 13px auto;
+  font-size: 1.3rem;
+}
+
+.offers .offers-cont .offer .price {
+  text-align: center;
+  font-weight: lighter;
+  font-size: 1.8rem;
+  margin: 0 0 30px 0;
+}
+
+.offers .offers-cont .offer .detail {
+  text-align: center;
+  line-height: 25px;
+  color: rgb(212, 212, 212);
+  margin: 0 0 30px 0;
+}
+
+.offers .offers-cont .offer .btn-primary {
+  padding: 15px 20px;
+  margin: 0 auto 0px auto;
+  border: 2px solid #d8ac4e;
+  color: #d8ac4e;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.offers .offers-cont .offer .btn-primary .text {
+  font-size: 0.8rem;
+  margin: 0 15px 0 0;
+}
+
+.offers .offers-cont .offer .btn-primary i {
+  color: #d8ac4e;
+  font-size: 1rem;
+}
+
+.offers .offers-cont .offer-img-cont {
+  margin: 0 0 30px 0;
+  height: 600px;
+  overflow: hidden;
+}
+
+.offers .offers-cont .offer-img-cont .food-img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.menu {
+  background: url('http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/body-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+  position: relative;
+}
+
+.menu .menu1-cont,
+.menu .menu2-cont {
+  display: none;
+  position: absolute;
+}
+
+.menu .menu1-cont {
+  top: 5%;
+}
+
+.menu .menu2-cont {
+  top: 40%;
+  right: 0%;
+}
+
+.menu .container {
+  padding: 80px 0 80px 0;
+  width: 90%;
+  margin: auto;
+  max-width: 1100px;
+}
+
+.menu .container .upper .sub-head {
+  font-size: 2rem;
+  width: 100%;
+  text-align: center;
+  margin: 10px 0 10px 0;
+  text-align: center;
+}
+
+.menu .container .upper .main-head {
+  text-transform: uppercase;
+  color: #eee;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 0 15px 0;
+}
+
+.menu .container .upper .design {
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+
+.menu .container .upper .categories {
+  display: none;
+}
+
+.menu .container .menu-options {
+  margin: 20px 0;
+}
+
+.menu .container .menu-options .option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 15px;
+  margin: 0 0 10px 0;
+  background: #000;
+}
+
+.menu .container .menu-options .option .name {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  color: #d8ac4e;
+}
+
+.menu .container .menu-options .option i {
+  color: rgb(212, 212, 212);
+}
+
+.menu .container .menu-options .menu-cont {
+  margin: 30px 0;
+}
+
+.menu .container .menu-options .menu-cont .showcase-img-cont {
+  position: relative;
+}
+
+.menu .container .menu-options .menu-cont .showcase-img-cont .shapeover {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.menu .container .menu-options .menu-cont .showcase-img-cont .showcase-img {
+  width: 100%;
+}
+
+.menu .container .menu-options .menu-cont .menu-items {
+  margin: 30px 0 10px 0;
+}
+
+.menu .container .menu-options .menu-cont .menu-items .item {
+  padding: 0 0 20px 0;
+  margin: 0 0 30px 0;
+  border-bottom: 3px dotted grey;
+}
+
+.menu .container .menu-options .menu-cont .menu-items .item .upper {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  overflow: hidden;
+}
+
+.menu .container .menu-options .menu-cont .menu-items .item .upper .item-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.menu .container .menu-options .menu-cont .menu-items .item .main-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.menu .container .menu-options .menu-cont .menu-items .item .main-details {
+  margin: 20px 0 0 0;
+}
+
+.menu
+  .container
+  .menu-options
+  .menu-cont
+  .menu-items
+  .item
+  .main-details
+  .left {
+  font-size: 1.3rem;
+  width: 70%;
+}
+
+.menu
+  .container
+  .menu-options
+  .menu-cont
+  .menu-items
+  .item
+  .main-details
+  .right {
+  font-size: 1.4rem;
+  color: #d8ac4e;
+  width: 30%;
+  text-align: right;
+}
+
+.menu
+  .container
+  .menu-options
+  .menu-cont
+  .menu-items
+  .item
+  .main-details
+  .sub-detail {
+  font-size: 1.1rem;
+  color: rgb(212, 212, 212);
+  line-height: 25px;
+  width: 100%;
+  margin: 20px 0 0 0;
+}
+
+.popular-dishes {
+  background: url('http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/popular-menu-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.popular-dishes .container {
+  padding: 80px 0 80px 0;
+  width: 90%;
+  margin: auto;
+  max-width: 1100px;
+}
+
+.popular-dishes .container .upper .sub-head {
+  font-size: 2rem;
+  width: 100%;
+  text-align: center;
+  margin: 10px 0 10px 0;
+  text-align: center;
+}
+
+.popular-dishes .container .upper .main-head {
+  text-transform: uppercase;
+  color: #eee;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 0 15px 0;
+}
+
+.popular-dishes .container .upper .design {
+  text-align: center;
+  margin: 0 0 40px 0;
+}
+.popular-dishes .container .main-content .dish {
+  margin: 0 0 50px 0;
+  position: relative;
+}
+
+.popular-dishes .container .main-content .dish .shapeover {
+  position: absolute;
+  width: 90%;
+  height: 94%;
+  border: 2px solid #000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.popular-dishes .container .main-content .dish .top .food-img {
+  width: 100%;
+  display: block;
+}
+
+.popular-dishes .container .main-content .dish .bottom {
+  background: #d8ac4e;
+  padding: 0 0 30px 0;
+}
+
+.popular-dishes .container .main-content .dish .bottom .cont {
+  width: 70%;
+  margin: auto;
+}
+
+.popular-dishes .container .main-content .dish .bottom .cont .price {
+  padding: 10px 0;
+  font-size: 1.5rem;
+  background: #000;
+  width: 100px;
+  margin: 0 auto 0px auto;
+  color: #fff;
+  text-align: center;
+  transform: translate(0, -50%);
+}
+
+.popular-dishes .container .main-content .dish .bottom .cont .name {
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 0 10px 0;
+}
+
+.popular-dishes .container .main-content .dish .bottom .cont .design-cont {
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+
+.popular-dishes .container .main-content .dish .bottom .cont .button-inv {
+  width: 80%;
+  padding: 20px 0;
+  margin: 0 auto 20px auto;
+  border: 1px solid #000;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popular-dishes .container .main-content .dish .bottom .cont .button-inv .text {
+  font-size: 0.8rem;
+  margin: 0 15px 0 0;
+}
+
+.popular-dishes .container .main-content .dish .bottom .cont .button-inv i {
+  color: #000;
+  font-size: 1rem;
+}
+
+.book {
+  background: url('http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/book-table-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+  position: relative;
+}
+
+.book .cal1-cont,
+.book .cal2-cont {
+  display: none;
+  position: absolute;
+}
+
+.book .cal1-cont {
+  top: 5%;
+}
+
+.book .cal2-cont {
+  top: 10%;
+  right: 0;
+}
+
+.book .container {
+  padding: 80px 0 80px 0;
+  width: 90%;
+  margin: auto;
+  max-width: 1100px;
+}
+
+.book .container .upper .sub-head {
+  font-size: 2rem;
+  width: 100%;
+  text-align: center;
+  margin: 10px 0 10px 0;
+  text-align: center;
+}
+
+.book .container .upper .main-head {
+  text-transform: uppercase;
+  color: #eee;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 0 15px 0;
+}
+
+.book .container .upper .design {
+  text-align: center;
+  margin: 0 0 40px 0;
+}
+
+.book .container .book-form {
+  background: #d8ac4e;
+  padding: 25px;
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+}
+
+.book .container .book-form .content {
+  padding: 10px 30px 30px 30px;
+  border: 2px solid #ebd096;
+}
+
+.book .container .book-form .content input,
+.book .container .book-form .content textarea {
+  width: 100%;
+  padding: 20px 10px 20px 0;
+  margin: 0 0 0px 0;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid black;
+  font-size: 1rem;
+}
+
+.book .container .book-form .content .button-inv {
+  width: 100%;
+  padding: 20px 0;
+  margin: 40px auto 0px auto;
+  border: 2px solid #000;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.book .container .book-form .content .button-inv .text {
+  font-size: 0.8rem;
+  margin: 0 15px 0 0;
+}
+
+.book .container .book-form .content .button-inv i {
+  color: #000;
+  font-size: 1rem;
+}
+
+.testi {
+  background: url('http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/reviews-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.testi .container {
+  padding: 80px 0 80px 0;
+  width: 90%;
+  margin: auto;
+  max-width: 1100px;
+}
+
+.testi .container .upper .sub-head {
+  font-size: 2rem;
+  width: 100%;
+  text-align: center;
+  margin: 10px 0 10px 0;
+  text-align: center;
+}
+
+.testi .container .upper .main-head {
+  text-transform: uppercase;
+  color: #eee;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 0 15px 0;
+}
+
+.testi .container .upper .design {
+  text-align: center;
+  margin: 0 0 80px 0;
+}
+
+.testi .container .testi-content .testimonial:nth-child(2),
+.testi .container .testi-content .testimonial:nth-child(3) {
+  display: none;
+}
+
+.testi .container .testi-content .testimonial {
+  background: #000;
+  padding: 20px;
+  position: relative;
+}
+
+.testi .container .testi-content .testimonial .img-cont {
+  width: 100px;
+  border-radius: 50%;
+  margin: auto;
+  height: 100px;
+  overflow: hidden;
+  transform: translate(-50%, -40%);
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+
+.testi .container .testi-content .testimonial .cont {
+  width: 100%;
+  padding: 80px 0px 50px 0;
+  border: 1px solid #555;
+}
+
+.testi .container .testi-content .testimonial .img-cont .testi-img {
+  object-position: center;
+  object-fit: cover;
+  width: 100%;
+}
+
+.testi .container .testi-content .testimonial .cont .review {
+  color: #c0bebf;
+  width: 90%;
+  text-align: center;
+  line-height: 28px;
+  font-size: 1rem;
+  margin: 0 auto 30px auto;
+  letter-spacing: 1px;
+}
+
+.testi .container .testi-content .testimonial .cont .name {
+  text-align: center;
+  font-size: 1.3rem;
+  margin: 0 0 10px 0;
+}
+
+.testi .container .testi-content .testimonial .cont .prof {
+  text-align: center;
+  color: #c0bebf;
+}
+
+.gallery {
+  background: url('http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/body-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.gallery .container {
+  padding: 80px 0 80px 0;
+  width: 90%;
+  margin: auto;
+  max-width: 1100px;
+}
+
+.gallery .container .upper .sub-head {
+  font-size: 2rem;
+  width: 100%;
+  text-align: center;
+  margin: 10px 0 10px 0;
+  text-align: center;
+}
+
+.gallery .container .upper .main-head {
+  text-transform: uppercase;
+  color: #eee;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 0 15px 0;
+}
+
+.gallery .container .upper .design {
+  text-align: center;
+  margin: 0 0 40px 0;
+}
+
+.gallery .container .content .cats {
+  margin: 0 0 80px 0;
+}
+
+.gallery .container .content .cats .cat {
+  padding: 15px 0;
+  text-align: center;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  background: rgba(65, 65, 65, 0.5);
+  margin: 0 0 3px 0;
+}
+
+.gallery .container .content .cats .active-cat {
+  background: #d8ac4e;
+}
+
+.gallery .container .content .images .img-cont {
+  margin: 0 0 5px 0;
+}
+
+.gallery .container .content .images .img-cont .img {
+  width: 100%;
+}
+
+.main-footer {
+  background: url('http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/footer-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.main-footer .container {
+  padding: 60px 0 60px 0;
+  width: 90%;
+  margin: auto;
+  max-width: 1300px;
+}
+
+.main-footer .container .upper .sub-head {
+  font-size: 2rem;
+  width: 100%;
+  text-align: center;
+  margin: 10px 0 10px 0;
+  text-align: center;
+}
+
+.main-footer .container .upper .main-head {
+  text-transform: uppercase;
+  color: #eee;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 0 15px 0;
+}
+
+.main-footer .container .upper .design {
+  text-align: center;
+  margin: 0 0 40px 0;
+}
+
+.main-footer .container .content .text {
+  line-height: 28px;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.main-footer .container .content form {
+  display: flex;
+  margin: 30px auto 40px auto;
+  width: 90%;
+}
+
+.main-footer .container .content form input {
+  width: 85%;
+  background: transparent;
+  padding: 15px;
+  border: 2px solid #d8ac4e;
+  color: #d8ac4e;
+  font-family: 'montserrat', sans-serif;
+}
+
+.main-footer .container .content form input::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #d8ac4e;
+}
+
+.main-footer .container .content form input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #d8ac4e;
+}
+
+.main-footer .container .content form input::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #d8ac4e;
+}
+
+.main-footer .container .content .icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+
+.main-footer .container .content .icons i {
+  font-size: 1rem;
+  color: rgb(216, 216, 216);
+}
+
+.main-footer .container .content form button {
+  width: 15%;
+  background: #d8ac4e;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 340px) {
+  .hero .container .content {
+    top: 50%;
+  }
+  .hero .container .dots {
+    display: flex;
+  }
+}
+
+@media (min-width: 650px) {
+  html {
+    font-size: 20px;
+  }
+
+  .hero .container .content .detail {
+    font-size: 0.9rem;
+  }
+
+  .hero .container .content .actions {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero .container .content .actions .action {
+    width: unset;
+    padding: 15px 30px;
+    margin: 0;
+  }
+
+  .hero .container .content .actions .action:nth-child(1) {
+    margin: 0 15px 0 0;
+  }
+
+  .hero .container .content .actions:nth-child(2) {
+    margin: 0 0 0 15px;
+  }
+
+  .hero .container .content .actions .action .text {
+    font-size: 0.6rem;
+  }
+
+  .hero .container .content .sub-head {
+    font-size: 2.5rem;
+  }
+
+  .hero .container .content .actions .action i {
+    font-size: 0.8rem;
+  }
+
+  .hero .container .content .main-head {
+    font-size: 3.3rem;
+  }
+
+  .hero .container .dots {
+    width: 100px;
+  }
+
+  .hero .container .dots .dot {
+    min-width: 15px;
+    min-height: 15px;
+  }
+
+  .about .container .left .sub-head {
+    font-size: 2.2rem;
+  }
+
+  .about .container .left .main-head {
+    font-size: 2.5rem;
+  }
+
+  .about .container .left .line {
+    font-size: 1.2rem;
+    width: 95%;
+    margin: 0 auto 30px auto;
+  }
+
+  .about .container .left .detail {
+    font-size: 0.9rem;
+  }
+
+  .about .container .left .features {
+    display: flex;
+    padding: 50px 0 0px 0;
+  }
+
+  .about .container .left .features .feature {
+    margin: 0 auto 0px auto;
+    width: 200px;
+  }
+
+  .about .container .left .features .feature .lower .cont .title {
+    font-size: 1rem;
+  }
+  .about .container .right .cont {
+    text-align: center;
+  }
+
+  .about .container .right .cont .cont-img {
+    width: 350px;
+    margin: auto;
+  }
+
+  .offers .container .sub-head {
+    font-size: 2.3rem;
+  }
+
+  .offers .container .main-head {
+    font-size: 2.5rem;
+  }
+
+  .offers .offers-cont .offer .name {
+    font-size: 1.5rem;
+  }
+  .offers .offers-cont .offer .discount {
+    width: 150px;
+  }
+  .offers .offers-cont .offer .price {
+    font-size: 1.5rem;
+  }
+  .offers .offers-cont .offer .detail {
+    font-size: 0.8rem;
+    color: #c0bebf;
+  }
+
+  .offers .offers-cont .offer .btn-primary {
+    padding: 15px 40px;
+    border: 1px solid #d8ac4e;
+  }
+
+  .offers .offers-cont .offer .btn-primary .text {
+    font-size: 0.6rem;
+    margin: 0 10px 0 0;
+    font-weight: bold;
+  }
+
+  .offers .offers-cont .offer-img-cont {
+    height: unset;
+  }
+
+  .offers .offers-cont .offer-img-cont .food-img {
+    width: 100%;
+    height: unset;
+  }
+
+  .menu .container .menu-options .menu-cont .menu-items .item {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu .container .menu-options .menu-cont .menu-items .item .upper {
+    width: 100px;
+    height: 100px;
+    margin: 0 30px 0 0;
+  }
+  .menu .container .menu-options .menu-cont .menu-items .item .main-details {
+    flex: 1;
+    margin: 0;
+  }
+
+  .menu
+    .container
+    .menu-options
+    .menu-cont
+    .menu-items
+    .item
+    .main-details
+    .left {
+    font-size: 1.1rem;
+  }
+
+  .menu
+    .container
+    .menu-options
+    .menu-cont
+    .menu-items
+    .item
+    .main-details
+    .right {
+    font-size: 1.2rem;
+  }
+  .menu
+    .container
+    .menu-options
+    .menu-cont
+    .menu-items
+    .item
+    .main-details
+    .sub-detail {
+    font-size: 0.8rem;
+    color: rgb(212, 212, 212);
+    line-height: 28px;
+    margin: 10px 0 0 0;
+  }
+
+  .popular-dishes .container .main-content .dish .bottom .cont .button-inv {
+    margin: 0 auto 40px auto;
+  }
+
+  .gallery .container .content .images .img-cont {
+    text-align: center;
+  }
+  .gallery .container .content .images .img-cont .img {
+    width: 50%;
+  }
+
+  .gallery .container .content .cats {
+    display: flex;
+    justify-content: space-between;
+  }
+  .gallery .container .content .cats .cat {
+    width: 19%;
+  }
+
+  .gallery .container .content .images {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .gallery .container .content .images .img-cont {
+    width: 48%;
+    margin: 0 0 30px;
+  }
+
+  .gallery .container .content .images .img-cont .img {
+    width: 100%;
+  }
+  .main-footer .container .content .icons {
+    max-width: 300px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .menu .menu1-cont,
+  .menu .menu2-cont {
+    display: unset;
+  }
+
+  .main-header .nav-container {
+    max-width: 1100px;
+    margin: auto;
+  }
+
+  .main-header .nav-container .left-sm {
+    display: none;
+  }
+
+  .hero .container .content .sub-head {
+    font-size: 3rem;
+  }
+
+  .hero .container .content .main-head {
+    font-size: 4.5rem;
+  }
+
+  .hero .container .content .actions .action {
+    padding: 15px 40px;
+  }
+
+  .hero .container .content .actions .action .text {
+    font-size: 0.6rem;
+  }
+
+  .offers .container .offers-cont {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .offers .container .offers-cont .offer,
+  .offers .container .offers-cont .offer-img-cont {
+    width: 32%;
+  }
+  .offers .container .offers-cont .offer {
+    order: 1;
+  }
+  .offers .container .offers-cont .offer-img-cont {
+    height: unset;
+  }
+
+  .offers .container .offers-cont .offer-img-cont .food-img {
+    display: none;
+  }
+
+  .offers .container .offers-cont .offer-img-cont:nth-child(2) {
+    background: url('http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/special-menu-img2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .offers .container .offers-cont .offer-img-cont:nth-child(3) {
+    background: url('http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/special-menu-img1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .offers .container .offers-cont .offer-img-cont:nth-child(2) {
+    order: 2;
+  }
+
+  .offers .offers-cont .offer {
+    padding: 80px 20px;
+  }
+
+  .offers .offers-cont .offer .name {
+    margin: 0px 0 40px 0;
+  }
+  .offers .offers-cont .offer .discount {
+    padding: 8px 0;
+    font-size: 1.1rem;
+  }
+
+  .offers .offers-cont .offer .detail {
+    width: 85%;
+    margin: 0 auto 50px auto;
+    line-height: 30px;
+  }
+
+  .offers .offers-cont .offer .discount {
+    font-size: 1.1rem;
+  }
+
+  .menu .container .upper .categories {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: 40px auto 60px auto;
+  }
+
+  .menu .container .upper .categories .cat {
+    padding: 15px 30px;
+    text-transform: uppercase;
+    background: #000;
+    cursor: pointer;
+  }
+
+  .menu .container .upper .categories .cat:hover {
+    background: #d8ac4e;
+  }
+
+  .menu .container .upper .categories .active {
+    background: #d8ac4e;
+  }
+
+  .menu .container .menu-options .option {
+    display: none;
+  }
+
+  .menu .container .menu-options .menu-cont {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu .container .menu-options .menu-cont .menu-items {
+    margin: 0;
+  }
+
+  .menu .container .menu-options .menu-cont .menu-items .item {
+    margin: 0 0 20px 0;
+    padding: 0 0 13px 0;
+  }
+
+  .menu .container .menu-options .menu-cont .menu-items .item:last-child {
+    margin: 0;
+  }
+
+  .menu .container .menu-options .showcase-img-cont {
+    width: 40%;
+    display: flex;
+    align-items: center;
+  }
+
+  .menu .container .menu-options .menu-items {
+    width: 58%;
+  }
+  .popular-dishes .container .main-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  .popular-dishes .container .main-content .dish {
+    margin: 0 0 0px 0;
+    width: 32%;
+  }
+
+  .book .cal1-cont,
+  .book .cal2-cont {
+    display: unset;
+  }
+
+  .gallery .container .content .images .img-cont {
+    width: 24.5%;
+  }
+
+  .main-footer .container .content .text {
+    font-size: 0.9rem;
+  }
+  .main-footer .container .content {
+    max-width: 600px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .about .dish-cont {
+    display: unset;
+  }
+
+  .about .achieve-cont {
+    display: unset;
+  }
+
+  .about .old-pic-cont {
+    display: unset;
+  }
+
+  .about .award-cont {
+    display: unset;
+  }
+
+  .about .container .left {
+    width: 60%;
+  }
+  .about .container .right {
+    width: 38%;
+  }
+
+  .about .container .right .cont {
+    width: 100%;
+  }
+
+  .about .container .right .cont .cont-img {
+    width: 120%;
+  }
+
+  .testi .container .testi-content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .testi .container .testi-content .testimonial:nth-child(2),
+  .testi .container .testi-content .testimonial:nth-child(3) {
+    display: unset;
+  }
+
+  .testi .container .testi-content .testimonial {
+    width: 31%;
+  }
+
+  .testi .container .testi-content .testimonial .cont .review {
+    font-size: 0.7rem;
+  }
+
+  .testi .container .testi-content .testimonial .cont .name {
+    font-size: 1.1rem;
+  }
+  .testi .container .testi-content .testimonial .cont .prof {
+    font-size: 0.7rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  .about .dish-cont {
+    left: 0%;
+  }
+  .about .award-cont {
+    right: 5%;
+  }
+}
