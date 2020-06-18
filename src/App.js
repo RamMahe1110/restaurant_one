@@ -5,6 +5,7 @@ function App() {
   const [currMenuCatId, changeMenuCatId] = useState(1)
   const [currResMenuCatId, changeResMenuCatId] = useState(null)
   const [currGallCatId, changeGallCatId] = useState(1)
+  const [resMenuVisibility, changeResMenuVisibility] = useState(false)
   const [menu] = useState([
     {
       catId: 1,
@@ -240,6 +241,10 @@ function App() {
     }
   }
 
+  const toggleResMenuVisibilty = () => {
+    changeResMenuVisibility(!resMenuVisibility)
+  }
+
   const onGalleryCatClick = (catId) => {
     changeGallCatId(catId)
   }
@@ -279,11 +284,23 @@ function App() {
             <li className="link">GALLERY</li>
             <li className="link">CONTACT</li>
           </ul>
-          <div class="left-sm">
+          <div onClick={toggleResMenuVisibilty} class="left-sm">
             <i class="fa fa-bars" aria-hidden="true"></i>
           </div>
         </nav>
       </header>
+      {resMenuVisibility ? (
+        <ul className="res-menu">
+          <li className="link">HOME</li>
+          <li className="link">ABOUT US</li>
+          <li className="link">OFFER</li>
+          <li className="link">MENU</li>
+          <li className="link">TESTIMONIALS</li>
+          <li className="link">GALLERY</li>
+          <li className="link">CONTACT</li>
+        </ul>
+      ) : null}
+
       <section class="hero">
         <div class="container">
           <div class="content">

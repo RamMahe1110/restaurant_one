@@ -98,6 +98,22 @@ button:focus {
   font-weight: lighter;
 }
 
+
+.res-menu {
+  margin: 74px 0 0 0;
+  color: #fff;
+  background: #000;
+  z-index: 10000;
+  position: fixed;
+  width: 100%;
+}
+
+.res-menu .link {
+  padding: 20px;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
 .hero {
   background: url('http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/slider-bg-image-1.jpg');
   height: 100vh;
@@ -1387,6 +1403,11 @@ button:focus {
 }
 
 @media (min-width: 1000px) {
+
+  .res-menu { 
+    display: none;
+  }
+
   .menu .menu1-cont,
   .menu .menu2-cont {
     display: unset;
