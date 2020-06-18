@@ -3,6 +3,8 @@ import './App.css'
 
 function App() {
   const [currMenuCatId, changeMenuCatId] = useState(1)
+  const [currResMenuCatId, changeResMenuCatId] = useState(null)
+  const [currGallCatId, changeGallCatId] = useState(1)
   const [menu] = useState([
     {
       catId: 1,
@@ -28,7 +30,7 @@ function App() {
         },
         {
           itemId: 1,
-          itemName: 'SPECIAL PUFF',
+          itemName: 'SPCIAL PUFF',
           itemPrice: 45,
           itemDetail: ` Lorem ipsum, dolor sit amet consectetur adipisicing
             elit. Dolores, voluptatum! Fuga et rem esse saepe`,
@@ -136,7 +138,7 @@ function App() {
       items: [
         {
           itemId: 1,
-          itemName: 'SPECIAL PUFF',
+          itemName: 'AppL PUFF',
           itemPrice: 45,
           itemDetail: ` Lorem ipsum, dolor sit amet consectetur adipisicing
             elit. Dolores, voluptatum! Fuga et rem esse saepe`,
@@ -154,7 +156,7 @@ function App() {
         },
         {
           itemId: 1,
-          itemName: 'SPECIAL PUFF',
+          itemName: 'SPEL PUFF',
           itemPrice: 45,
           itemDetail: ` Lorem ipsum, dolor sit amet consectetur adipisicing
             elit. Dolores, voluptatum! Fuga et rem esse saepe`,
@@ -173,14 +175,88 @@ function App() {
       ],
     },
   ])
+  const [gallery] = useState([
+    {
+      id: 1,
+      catName: 'DESERT',
+      images: [
+        'http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/gallery-images/thumb6@2x.jpg',
+        'http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/gallery-images/thumb6@2x.jpg',
+        'http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/gallery-images/thumb6@2x.jpg',
+        'http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/gallery-images/thumb6@2x.jpg',
+      ],
+    },
+    {
+      id: 2,
+      catName: 'LUNCH',
+      images: [
+        'http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/gallery-images/thumb6@2x.jpg',
+        'http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/gallery-images/thumb6@2x.jpg',
+        'http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/gallery-images/thumb6@2x.jpg',
+        'http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/gallery-images/thumb6@2x.jpg',
+      ],
+    },
+    {
+      id: 3,
+      catName: 'DINNER',
+      images: [
+        'http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/gallery-images/thumb6@2x.jpg',
+        'http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/gallery-images/thumb6@2x.jpg',
+        'http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/gallery-images/thumb6@2x.jpg',
+        'http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/gallery-images/thumb6@2x.jpg',
+      ],
+    },
+    {
+      id: 4,
+      catName: 'BREAKFAST',
+      images: [
+        'http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/gallery-images/thumb6@2x.jpg',
+        'http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/gallery-images/thumb6@2x.jpg',
+        'http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/gallery-images/thumb6@2x.jpg',
+        'http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/gallery-images/thumb6@2x.jpg',
+      ],
+    },
+  ])
 
   const onMenuCatClick = (catId) => {
     changeMenuCatId(catId)
   }
 
-  const getMenuItems = () => {
-    let menuItems = menu.find((item) => item.catId === currMenuCatId)
-    return menuItems.items
+  const onResMenuCatClick = (catId) => {
+    if (currResMenuCatId === catId) {
+      changeResMenuCatId(null)
+    } else {
+      changeResMenuCatId(catId)
+    }
+  }
+
+  const getMenuItems = (res) => {
+    if (res) {
+      let menuItems = menu.find((item) => item.catId === currResMenuCatId)
+      return menuItems.items
+    } else {
+      let menuItems = menu.find((item) => item.catId === currMenuCatId)
+      return menuItems.items
+    }
+  }
+
+  const onGalleryCatClick = (catId) => {
+    changeGallCatId(catId)
+  }
+
+  const getGalleryImages = () => {
+    if (currGallCatId) {
+      let item = gallery.find((item) => item.id === currGallCatId)
+      return item.images
+    } else {
+      let images = []
+      for (let i = 0; i < gallery.length; i++) {
+        for (let j = 0; j < gallery[i].images.length; j++) {
+          images.push(gallery[i].images[j])
+        }
+      }
+      return images
+    }
   }
 
   return (
@@ -194,6 +270,15 @@ function App() {
               class="logo"
             />
           </div>
+          <ul className="left">
+            <li className="link">HOME</li>
+            <li className="link">ABOUT US</li>
+            <li className="link">OFFER</li>
+            <li className="link">MENU</li>
+            <li className="link">TESTIMONIALS</li>
+            <li className="link">GALLERY</li>
+            <li className="link">CONTACT</li>
+          </ul>
           <div class="left-sm">
             <i class="fa fa-bars" aria-hidden="true"></i>
           </div>
@@ -427,12 +512,58 @@ function App() {
               ))}
             </div>
             <div class="menu-options">
-              <div class="option">
-                <div class="left"></div>
-                <h5 class="name">Freshfood</h5>
-                <i class="fa fa-arrow-down" aria-hidden="true"></i>
-              </div>
-              <div class="menu-cont">
+              {menu.map((item) => (
+                <>
+                  <div
+                    onClick={() => onResMenuCatClick(item.catId)}
+                    class={`option ${
+                      item.catId === currResMenuCatId ? 'active' : ''
+                    }`}
+                  >
+                    <div class="left"></div>
+                    <h5 class="name">{item.catName}</h5>
+                    <i
+                      class={`fa ${
+                        item.catId === currResMenuCatId
+                          ? 'fa-arrow-up'
+                          : 'fa-arrow-down'
+                      }`}
+                      aria-hidden="true"
+                    ></i>
+                  </div>
+                  {item.catId === currResMenuCatId ? (
+                    <div class="menu-cont menu-cont-sm">
+                      <div class="showcase-img-cont">
+                        <div class="shapeover"></div>
+                        <img
+                          src="http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/menu-dish1.jpg"
+                          alt="food"
+                          class="showcase-img"
+                        />
+                      </div>
+                      <div class="menu-items">
+                        {getMenuItems(true).map((item) => (
+                          <div class="item">
+                            <div class="upper">
+                              <img
+                                src={item.itemImg}
+                                class="item-img"
+                                alt="item-img"
+                              />
+                            </div>
+                            <div class="main-details">
+                              <h5 class="left">{item.itemName}</h5>
+                              <h4 class="right">${item.itemPrice}</h4>
+                              <p class="sub-detail">{item.itemDetail}</p>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  ) : null}
+                </>
+              ))}
+              <div class="menu-cont menu-cont-lg">
                 <div class="showcase-img-cont">
                   <div class="shapeover"></div>
                   <img
@@ -459,26 +590,6 @@ function App() {
                     </div>
                   ))}
                 </div>
-              </div>
-              <div class="option">
-                <div class="left"></div>
-                <h5 class="name">Freshfood</h5>
-                <i class="fa fa-arrow-down" aria-hidden="true"></i>
-              </div>
-              <div class="option">
-                <div class="left"></div>
-                <h5 class="name">Freshfood</h5>
-                <i class="fa fa-arrow-down" aria-hidden="true"></i>
-              </div>
-              <div class="option">
-                <div class="left"></div>
-                <h5 class="name">Freshfood</h5>
-                <i class="fa fa-arrow-down" aria-hidden="true"></i>
-              </div>
-              <div class="option">
-                <div class="left"></div>
-                <h5 class="name">Freshfood</h5>
-                <i class="fa fa-arrow-down" aria-hidden="true"></i>
               </div>
             </div>
           </div>
@@ -629,7 +740,6 @@ function App() {
               <img
                 src="http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/heading-element.png"
                 alt="design"
-                src="design"
               />
             </div>
           </div>
@@ -708,41 +818,29 @@ function App() {
           </div>
           <div class="content">
             <div class="cats">
-              <div class="cat active-cat">All</div>
-              <div class="cat">Desert</div>
-              <div class="cat">Lunch</div>
-              <div class="cat">Dinner</div>
-              <div class="cat">Breakfast</div>
+              <div
+                onClick={() => onGalleryCatClick(null)}
+                class={`cat ${currGallCatId ? '' : 'active-cat'}`}
+              >
+                All
+              </div>
+              {gallery.map((item) => (
+                <div
+                  onClick={() => onGalleryCatClick(item.id)}
+                  className={`cat ${
+                    currGallCatId === item.id ? 'active-cat' : ''
+                  }`}
+                >
+                  {item.catName}
+                </div>
+              ))}
             </div>
             <div class="images">
-              <div class="img-cont">
-                <img
-                  src="http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/gallery-images/thumb6@2x.jpg"
-                  alt="food"
-                  class="img"
-                />
-              </div>
-              <div class="img-cont">
-                <img
-                  src="http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/gallery-images/thumb6@2x.jpg"
-                  alt="food"
-                  class="img"
-                />
-              </div>
-              <div class="img-cont">
-                <img
-                  src="http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/gallery-images/thumb6@2x.jpg"
-                  alt="food"
-                  class="img"
-                />
-              </div>
-              <div class="img-cont">
-                <img
-                  src="http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/gallery-images/thumb6@2x.jpg"
-                  alt="food"
-                  class="img"
-                />
-              </div>
+              {getGalleryImages().map((item) => (
+                <div class="img-cont">
+                  <img src={item} alt="food" class="img" />
+                </div>
+              ))}
             </div>
           </div>
         </div>

@@ -16,6 +16,14 @@ button {
   font-family: 'Montserrat', sans-serif;
 }
 
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 textarea:focus,
 input:focus,
 button:focus {
@@ -44,11 +52,34 @@ button:focus {
 }
 
 .main-header .nav-container .right {
-  min-width: 40%;
+  min-width: 20%;
 }
 
 .main-header .nav-container .right .logo {
   width: 120px;
+}
+
+.main-header .nav-container .left {
+  display: flex;
+  color: #fff;
+  min-width: 70%;
+  justify-content: space-between;
+  display: none;
+}
+
+.main-header .nav-container .left .link {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #eee;
+  cursor: pointer;
+}
+
+.main-header .nav-container .left .link:hover {
+  color: #d8ac4e;
+}
+
+.main-header .nav-container .left .link {
+  margin: 0 0 0 20px;
 }
 
 .main-header .nav-container .left-sm {
@@ -499,6 +530,18 @@ button:focus {
   background: #000;
 }
 
+.menu .container .menu-options .active {
+  background: #d8ac4e;
+}
+
+.menu .container .menu-options .active .name {
+  color: black !important;
+}
+
+.menu .container .menu-options .active i {
+  color: black !important;
+}
+
 .menu .container .menu-options .option .name {
   text-transform: uppercase;
   font-size: 1.3rem;
@@ -511,6 +554,10 @@ button:focus {
 
 .menu .container .menu-options .menu-cont {
   margin: 30px 0;
+}
+
+.menu .container .menu-options .menu-cont-lg {
+  display: none;
 }
 
 .menu .container .menu-options .menu-cont .showcase-img-cont {
@@ -787,6 +834,34 @@ button:focus {
   border: 2px solid #ebd096;
 }
 
+.book .container .book-form .content input::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #333;
+}
+.book .container .book-form .content input::-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #333;
+  opacity: 1;
+}
+.book .container .book-form .content input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #333;
+  opacity: 1;
+}
+.book .container .book-form .content input::-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #333;
+}
+.book .container .book-form .content input::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #333;
+}
+
+.book .container .book-form .content input::placeholder {
+  /* Most modern browsers support this now. */
+  color: #333;
+}
+
 .book .container .book-form .content input,
 .book .container .book-form .content textarea {
   width: 100%;
@@ -964,6 +1039,11 @@ button:focus {
   text-transform: uppercase;
   background: rgba(65, 65, 65, 0.5);
   margin: 0 0 3px 0;
+  cursor: pointer;
+}
+
+.gallery .container .content .cats .cat:hover {
+  background: #d8ac4e;
 }
 
 .gallery .container .content .cats .active-cat {
@@ -1317,6 +1397,10 @@ button:focus {
     margin: auto;
   }
 
+  .main-header .nav-container .left {
+    display: flex;
+  }
+
   .main-header .nav-container .left-sm {
     display: none;
   }
@@ -1422,6 +1506,15 @@ button:focus {
   }
 
   .menu .container .menu-options .menu-cont {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu .container .menu-options .menu-cont-sm {
+    display: none;
+  }
+
+  .menu .container .menu-options .menu-cont-lg {
     display: flex;
     justify-content: space-between;
   }
