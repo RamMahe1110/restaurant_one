@@ -285,7 +285,11 @@ function App() {
             <li className="link">CONTACT</li>
           </ul>
           <div onClick={toggleResMenuVisibilty} class="left-sm">
-            <i class="fa fa-bars" aria-hidden="true"></i>
+            {resMenuVisibility ? (
+              <i class="fa fa-times" aria-hidden="true"></i>
+            ) : (
+              <i class="fa fa-bars" aria-hidden="true"></i>
+            )}
           </div>
         </nav>
       </header>
